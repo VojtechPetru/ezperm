@@ -1,7 +1,12 @@
 [tool.poetry]
 name = "ezperm"
-version = "0.1.0"
+version = "0.1.1"
 description = "Permissions made easy"
+readme = "README.md"
+license = "LICENSE.md"
+homepage = "https://github.com/VojtechPetru/ezperm"
+repository = "https://github.com/VojtechPetru/ezperm"
+keywords = ["permissions", "django"]
 authors = ["vojtech <petru.vojtech@gmail.com>"]
 
 [tool.poetry.dependencies]
