@@ -128,7 +128,7 @@ from ezperm.django.views import PermissionRequiredMixin
 
 
 class CookView(PermissionRequiredMixin, View):
-    permission_required = Permissions.CAN_COOK | Permissions.is_worthy
+    permission_required = Permissions.is_worthy | Permissions.is_old
     
     def get(self, request):
         return HttpResponse('You can cook!')
