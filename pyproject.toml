@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "ezperm"
+version = "0.1.0"
+description = "Permissions made easy"
+authors = ["vojtech <petru.vojtech@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+
+# A list of all of the optional dependencies, some of which are included in the
+# below `extras`. They can be opted into by apps.
+django = { version = ">=2.2,<4.2", optional = true }
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.2"
+
+[tool.poetry.extras]  # https://python-poetry.org/docs/pyproject/#extras
+django = ["django"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.black]
+verbose = true
+line-length = 120
+target_version = ['py310']
