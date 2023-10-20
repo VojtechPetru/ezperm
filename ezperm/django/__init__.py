@@ -1,8 +1,6 @@
 try:
     import django
 except ModuleNotFoundError:
-    raise ModuleNotFoundError(
-        "Attempted import of `django` failed. Please specify `django` as an extra dependency of ezperm package.",
-    )
+    raise ModuleNotFoundError("Can't use `ezperm.django` module without Django installed in your environment.")
 
 from .models import *
