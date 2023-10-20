@@ -88,11 +88,6 @@ Permissions.is_worthy(ironman)  # ➞ False
 
 
 ### Django integration
-#### Installation
-```bash
-pip install ezperm[django]
-```
-
 ezperm comes with a couple of tools to help with Django integration. Its use is entirely optional, and you can use ezperm and Django without it.
 
 First, lets update our `Permissions` and `Hero` classes in our example:
